@@ -14,7 +14,7 @@ class ManageAcademicYears extends ManageRecords
     {
         return [
             Actions\CreateAction::make()
-                ->label('Tahun Ajaran')
+                ->label('Tambah Tahun Ajaran')
                 ->icon('heroicon-o-plus'),
         ];
     }

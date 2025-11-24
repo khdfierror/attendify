@@ -13,7 +13,9 @@ class ListSchedules extends ListRecords
     protected function getHeaderActions(): array
     {
         return [
-            Actions\CreateAction::make(),
+            Actions\CreateAction::make()
+                ->label('Tambah Jadwal')
+                ->icon('heroicon-o-plus'),
         ];
     }
 }

@@ -14,7 +14,7 @@ class ManageMajors extends ManageRecords
     {
         return [
             Actions\CreateAction::make()
-                ->label('Tahun Ajaran')
+                ->label('Tambah Jurusan')
                 ->icon('heroicon-o-plus'),
         ];
     }

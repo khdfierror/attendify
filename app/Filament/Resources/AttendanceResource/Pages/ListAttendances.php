@@ -13,7 +13,9 @@ class ListAttendances extends ListRecords
     protected function getHeaderActions(): array
     {
         return [
-            Actions\CreateAction::make(),
+            Actions\CreateAction::make()
+                ->label('Tambah Absensi')
+                ->icon('heroicon-o-plus'),
             Actions\Action::make('bulk_attendance')
                 ->label('Absensi Massal')
                 ->icon('heroicon-o-users')
