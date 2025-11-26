@@ -55,7 +55,7 @@ class Profile extends Page implements HasForms
     {
         return $form
             ->schema([
-                Forms\Components\Fieldset::make('General')
+                Forms\Components\Section::make('General')
                     ->schema([
                         Forms\Components\TextInput::make('name')
                             ->inlineLabel()
@@ -83,7 +83,7 @@ class Profile extends Page implements HasForms
                             ])
                             ->columnSpanFull(),
                     ]),
-                Forms\Components\Fieldset::make('Password')
+                Forms\Components\Section::make('Password')
                     ->schema([
                         Forms\Components\TextInput::make('current_password')
                             ->label('Old Password')
